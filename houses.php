@@ -80,7 +80,7 @@
 									<td class="text-center"><?php echo $i++ ?></td>
 									<td class="">
 										<p>House #: <b><?php echo $row['house_no'] ?></b></p>
-										<p><small>House Type: <b><?php echo $row['cname'] ?></b></small></p>
+										<p><small>Apartments: <b><?php echo $row['cname'] ?></b></small></p>
 										<p><small>Description: <b><?php echo $row['description'] ?></b></small></p>
 										<p><small>Price: <b><?php echo number_format($row['price'],2) ?></b></small></p>
 									</td>
