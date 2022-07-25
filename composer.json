@@ -1,6 +1,10 @@
 {
     "require": {
         "vlucas/phpdotenv": "^5.4",
-        "steampixel/simple-php-router": "^0.7.0"
+        "steampixel/simple-php-router": "^0.7.0",
+        "guzzlehttp/guzzle": "^7.4",
+        "guzzlehttp/psr7": "^2.4",
+        "http-interop/http-factory-guzzle": "^1.2",
+        "auth0/auth0-php": "^8.2"
     }
 }

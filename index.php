@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <?php
 
 // Import the Composer Autoloader to make the SDK classes accessible:
@@ -26,6 +27,8 @@ define('ROUTE_URL_LOGIN', ROUTE_URL_INDEX . '/login');
 define('ROUTE_URL_CALLBACK', ROUTE_URL_INDEX . '/callback');
 define('ROUTE_URL_LOGOUT', ROUTE_URL_INDEX . '/logout');
 
+
+
 // 👆 We're continuing from the steps above. Append this to your index.php file.
 
 Route::add('/', function() use ($auth0) {
@@ -45,7 +48,8 @@ Route::add('/', function() use ($auth0) {
   echo '<p>You can now <a href="/logout">log out</a>.</p>';
 });
 // ✋ We don't need to include this in our sample application, it's just an example.
-$name = $session->user['Maureen'] ?? $session->user['mauryn'] ?? $session->user['email'] ?? 'Unknown';
+$name = $session->user['name'] ?? $session->user['nickname'] ?? $session->user['email'] ?? 'Unknown';
+
 
 // 👆 We're continuing from the steps above. Append this to your index.php file.
 
@@ -67,7 +71,6 @@ Route::add('/callback', function() use ($auth0) {
   header("Location: " . ROUTE_URL_INDEX);
   exit;
 });
-
 // 👆 We're continuing from the steps above. Append this to your index.php file.
 
 Route::add('/logout', function() use ($auth0) {
@@ -75,11 +78,14 @@ Route::add('/logout', function() use ($auth0) {
   header("Location: " . $auth0->logout(ROUTE_URL_INDEX));
   exit;
 });
+
 // 👆 We're continuing from the steps above. Append this to your index.php file.
 
 // This tells our router that we've finished configuring our routes, and we're ready to begin routing incoming HTTP requests:
 Route::run('/');
+
 ?>
+
 
 <?php session_start(); ?>
 <head>
