@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <?php
 
 // Import the Composer Autoloader to make the SDK classes accessible:
@@ -16,6 +15,7 @@ $auth0 = new \Auth0\SDK\Auth0([
     'clientSecret' => $_ENV['AUTH0_CLIENT_SECRET'],
     'cookieSecret' => $_ENV['AUTH0_COOKIE_SECRET']
 ]);
+
 // 👆 We're continuing from the steps above. Append this to your index.php file.
 
 // Import our router library:
@@ -26,8 +26,6 @@ define('ROUTE_URL_INDEX', rtrim($_ENV['AUTH0_BASE_URL'], '/'));
 define('ROUTE_URL_LOGIN', ROUTE_URL_INDEX . '/login');
 define('ROUTE_URL_CALLBACK', ROUTE_URL_INDEX . '/callback');
 define('ROUTE_URL_LOGOUT', ROUTE_URL_INDEX . '/logout');
-
-
 
 // 👆 We're continuing from the steps above. Append this to your index.php file.
 
@@ -47,9 +45,9 @@ Route::add('/', function() use ($auth0) {
 
   echo '<p>You can now <a href="/logout">log out</a>.</p>';
 });
+
 // ✋ We don't need to include this in our sample application, it's just an example.
 $name = $session->user['name'] ?? $session->user['nickname'] ?? $session->user['email'] ?? 'Unknown';
-
 
 // 👆 We're continuing from the steps above. Append this to your index.php file.
 
@@ -78,7 +76,6 @@ Route::add('/logout', function() use ($auth0) {
   header("Location: " . $auth0->logout(ROUTE_URL_INDEX));
   exit;
 });
-
 // 👆 We're continuing from the steps above. Append this to your index.php file.
 
 // This tells our router that we've finished configuring our routes, and we're ready to begin routing incoming HTTP requests:
@@ -156,8 +153,6 @@ Route::run('/');
   <main id="view-panel" >
       <?php $page = isset($_GET['page']) ? $_GET['page'] :'home'; ?>
   	<?php include $page.'.php' ?>
-  	
-
   </main>
 
   <div id="preloader"></div>
