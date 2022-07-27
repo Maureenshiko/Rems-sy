@@ -39,10 +39,12 @@ class ComposerStaticInitd1d76cef2d6ae00a5fea40222a0369f8
         ),
         'H' => 
         array (
+            'Http\\Promise\\' => 13,
             'Http\\Message\\MultipartStream\\' => 29,
             'Http\\Message\\' => 13,
             'Http\\Factory\\Guzzle\\' => 20,
             'Http\\Discovery\\' => 15,
+            'Http\\Client\\' => 12,
         ),
         'G' => 
         array (
@@ -54,6 +56,10 @@ class ComposerStaticInitd1d76cef2d6ae00a5fea40222a0369f8
         'D' => 
         array (
             'Dotenv\\' => 7,
+        ),
+        'A' => 
+        array (
+            'Auth0\\SDK\\' => 10,
         ),
     );
 
@@ -99,6 +105,10 @@ class ComposerStaticInitd1d76cef2d6ae00a5fea40222a0369f8
         array (
             0 => __DIR__ . '/..' . '/nyholm/psr7/src',
         ),
+        'Http\\Promise\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-http/promise/src',
+        ),
         'Http\\Message\\MultipartStream\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-http/multipart-stream-builder/src',
@@ -114,6 +124,10 @@ class ComposerStaticInitd1d76cef2d6ae00a5fea40222a0369f8
         'Http\\Discovery\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-http/discovery/src',
+        ),
+        'Http\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-http/httplug/src',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
@@ -134,6 +148,10 @@ class ComposerStaticInitd1d76cef2d6ae00a5fea40222a0369f8
         'Dotenv\\' => 
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+        ),
+        'Auth0\\SDK\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/auth0/auth0-php/src',
         ),
     );
 
