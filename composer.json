@@ -1,27 +1,18 @@
 {
-    "name": "maureen/rems-sy",
+    "name": "hp/rems-sy",
+    "description": "this codes will help you",
     "type": "library",
-    "description": "my rental project",
-    "homepage": "https://github.com/Maureenshiko/Rems-sy.git",
     "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hp\\RemsSy\\": "src/"
+        }
+    },
     "authors": [
         {
-            "name": "Maureen Wanjiku",
-            "email": "maureenshimwa@gmail.com",
-            "role": "Developer"
+            "name": "maureen wanjiku",
+            "email": "maureenshimwa@gmail.com"
         }
     ],
-
-    "require": {
-        "vlucas/phpdotenv": "^5.4",
-        "steampixel/simple-php-router": "^0.7.0",
-        "guzzlehttp/guzzle": "^7.4",
-        "guzzlehttp/psr7": "^2.4",
-        "http-interop/http-factory-guzzle": "^1.2",
-        "auth0/auth0-php": "^8.2",
-        "kriswallsmith/buzz": "^1.2",
-        "nyholm/psr7": "^1.5",
-        "phpoption/phpoption": "^1.8",
-        "ralouphie/getallheaders": "^3.0"
-    }
+    "require": {}
 }

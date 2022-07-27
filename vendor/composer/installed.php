@@ -3,7 +3,7 @@
         'name' => 'maureen/rems-sy',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '93b6875780c633254996130c39a668ea180420ea',
+        'reference' => '1ff806a87a532bc2e1f7cb9c332c5df0fe832df0',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -76,7 +76,7 @@
         'maureen/rems-sy' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '93b6875780c633254996130c39a668ea180420ea',
+            'reference' => '1ff806a87a532bc2e1f7cb9c332c5df0fe832df0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

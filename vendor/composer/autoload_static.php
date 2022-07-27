@@ -44,6 +44,7 @@ class ComposerStaticInitd1d76cef2d6ae00a5fea40222a0369f8
             'Http\\Factory\\Guzzle\\' => 20,
             'Http\\Discovery\\' => 15,
             'Http\\Client\\' => 12,
+            'Hp\\RemsSy\\' => 10,
         ),
         'G' => 
         array (
@@ -131,6 +132,10 @@ class ComposerStaticInitd1d76cef2d6ae00a5fea40222a0369f8
         'Http\\Client\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-http/httplug/src',
+        ),
+        'Hp\\RemsSy\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
