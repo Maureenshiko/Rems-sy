@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  },
+  "name": "rems-sy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Maureenshiko/Rems-sy.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Maureenshiko/Rems-sy/issues"
+  },
+  "homepage": "https://github.com/Maureenshiko/Rems-sy#readme",
+  "description": "THE future"
+}

@@ -1,96 +1,6 @@
 {
     "packages": [
         {
-            "name": "auth0/auth0-php",
-            "version": "8.2.1",
-            "version_normalized": "8.2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/auth0/auth0-PHP.git",
-                "reference": "c6a628f9e3ce30c225ce42ae208ccc32f529f25c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/auth0/auth0-PHP/zipball/c6a628f9e3ce30c225ce42ae208ccc32f529f25c",
-                "reference": "c6a628f9e3ce30c225ce42ae208ccc32f529f25c",
-                "shasum": ""
-            },
-            "require": {
-                "ext-filter": "*",
-                "ext-json": "*",
-                "ext-mbstring": "*",
-                "ext-openssl": "*",
-                "php": "^7.4 || ^8.0",
-                "php-http/discovery": "^1.0",
-                "php-http/httplug": "^2.2",
-                "php-http/multipart-stream-builder": "^1.1",
-                "psr/cache": "^1.0 || ^2.0 || ^3.0",
-                "psr/event-dispatcher": "^1.0",
-                "psr/http-client-implementation": "^1.0",
-                "psr/http-factory-implementation": "^1.0",
-                "psr/http-message-implementation": "^1.0"
-            },
-            "require-dev": {
-                "ergebnis/composer-normalize": "^2.25",
-                "firebase/php-jwt": "^6.0",
-                "hyperf/event": "^2.2",
-                "mockery/mockery": "^1.4",
-                "nunomaduro/phpinsights": "^2.0",
-                "nyholm/psr7": "^1.4",
-                "pestphp/pest": "^1.21",
-                "php-http/mock-client": "^1.4",
-                "phpstan/phpstan": "^1.6",
-                "phpstan/phpstan-strict-rules": "^1.1",
-                "phpunit/phpunit": "^9.5",
-                "rector/rector": "^0.12.23",
-                "symfony/cache": "^4.4 || ^5.2 || ^6.0",
-                "vimeo/psalm": "^4.10",
-                "wikimedia/composer-merge-plugin": "^2.0"
-            },
-            "time": "2022-06-07T14:13:17+00:00",
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Auth0\\SDK\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Auth0",
-                    "email": "support@auth0.com",
-                    "homepage": "https://auth0.com/"
-                }
-            ],
-            "description": "Auth0 PHP SDK. Straight-forward and tested methods for accessing Auth0 Authentication and Management API endpoints.",
-            "homepage": "https://github.com/auth0/auth0-PHP",
-            "keywords": [
-                "Authentication",
-                "JSON Web Token",
-                "JWK",
-                "OpenId",
-                "api",
-                "auth",
-                "auth0",
-                "authorization",
-                "json web key",
-                "jwt",
-                "login",
-                "oauth",
-                "protect",
-                "secure"
-            ],
-            "support": {
-                "issues": "https://github.com/auth0/auth0-PHP/issues",
-                "source": "https://github.com/auth0/auth0-PHP/tree/8.2.1"
-            },
-            "install-path": "../auth0/auth0-php"
-        },
-        {
             "name": "graham-campbell/result-type",
             "version": "v1.0.4",
             "version_normalized": "1.0.4.0",
@@ -549,79 +459,6 @@
             "install-path": "../http-interop/http-factory-guzzle"
         },
         {
-            "name": "kriswallsmith/buzz",
-            "version": "1.2.1",
-            "version_normalized": "1.2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kriswallsmith/Buzz.git",
-                "reference": "2db23c3627ae7a86240ef2e68c6f8bb2c622e90d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/2db23c3627ae7a86240ef2e68c6f8bb2c622e90d",
-                "reference": "2db23c3627ae7a86240ef2e68c6f8bb2c622e90d",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1 || ^8.0",
-                "php-http/httplug": "^1.1 || ^2.0",
-                "psr/http-client": "^1.0",
-                "psr/http-factory": "^1.0",
-                "psr/http-message": "^1.0",
-                "symfony/options-resolver": "^3.4 || ^4.0 || ^5.0 || ^6.0"
-            },
-            "provide": {
-                "php-http/client-implementation": "1.0",
-                "psr/http-client-implementation": "1.0"
-            },
-            "require-dev": {
-                "nyholm/psr7": "^1.0",
-                "php-http/client-integration-tests": "^3.0",
-                "phpunit/phpunit": "^7.5 || ^9.4",
-                "psr/log": "^1.0"
-            },
-            "suggest": {
-                "ext-curl": "To use our cUrl clients",
-                "nyholm/psr7": "For PSR-7 and PSR-17 implementation"
-            },
-            "time": "2022-03-25T13:55:55+00:00",
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Buzz\\": "lib"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kris Wallsmith",
-                    "email": "kris.wallsmith@gmail.com",
-                    "homepage": "https://kriswallsmith.net/"
-                },
-                {
-                    "name": "Tobias Nyholm",
-                    "email": "tobias.nyholm@gmail.com",
-                    "homepage": "https://tnyholm.se/"
-                }
-            ],
-            "description": "Lightweight HTTP client",
-            "homepage": "https://github.com/kriswallsmith/Buzz",
-            "keywords": [
-                "curl",
-                "http client"
-            ],
-            "support": {
-                "issues": "https://github.com/kriswallsmith/Buzz/issues",
-                "source": "https://github.com/kriswallsmith/Buzz/tree/1.2.1"
-            },
-            "install-path": "../kriswallsmith/buzz"
-        },
-        {
             "name": "nyholm/psr7",
             "version": "1.5.1",
             "version_normalized": "1.5.1.0",
@@ -772,71 +609,6 @@
             "install-path": "../php-http/discovery"
         },
         {
-            "name": "php-http/httplug",
-            "version": "2.3.0",
-            "version_normalized": "2.3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-http/httplug.git",
-                "reference": "f640739f80dfa1152533976e3c112477f69274eb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-http/httplug/zipball/f640739f80dfa1152533976e3c112477f69274eb",
-                "reference": "f640739f80dfa1152533976e3c112477f69274eb",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1 || ^8.0",
-                "php-http/promise": "^1.1",
-                "psr/http-client": "^1.0",
-                "psr/http-message": "^1.0"
-            },
-            "require-dev": {
-                "friends-of-phpspec/phpspec-code-coverage": "^4.1",
-                "phpspec/phpspec": "^5.1 || ^6.0"
-            },
-            "time": "2022-02-21T09:52:22+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Http\\Client\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Eric GELOEN",
-                    "email": "geloen.eric@gmail.com"
-                },
-                {
-                    "name": "Márk Sági-Kazár",
-                    "email": "mark.sagikazar@gmail.com",
-                    "homepage": "https://sagikazarmark.hu"
-                }
-            ],
-            "description": "HTTPlug, the HTTP client abstraction for PHP",
-            "homepage": "http://httplug.io",
-            "keywords": [
-                "client",
-                "http"
-            ],
-            "support": {
-                "issues": "https://github.com/php-http/httplug/issues",
-                "source": "https://github.com/php-http/httplug/tree/2.3.0"
-            },
-            "install-path": "../php-http/httplug"
-        },
-        {
             "name": "php-http/message-factory",
             "version": "v1.0.2",
             "version_normalized": "1.0.2.0",
@@ -957,66 +729,6 @@
                 "source": "https://github.com/php-http/multipart-stream-builder/tree/1.2.0"
             },
             "install-path": "../php-http/multipart-stream-builder"
-        },
-        {
-            "name": "php-http/promise",
-            "version": "1.1.0",
-            "version_normalized": "1.1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-http/promise.git",
-                "reference": "4c4c1f9b7289a2ec57cde7f1e9762a5789506f88"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-http/promise/zipball/4c4c1f9b7289a2ec57cde7f1e9762a5789506f88",
-                "reference": "4c4c1f9b7289a2ec57cde7f1e9762a5789506f88",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1 || ^8.0"
-            },
-            "require-dev": {
-                "friends-of-phpspec/phpspec-code-coverage": "^4.3.2",
-                "phpspec/phpspec": "^5.1.2 || ^6.2"
-            },
-            "time": "2020-07-07T09:29:14+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Http\\Promise\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Joel Wurtz",
-                    "email": "joel.wurtz@gmail.com"
-                },
-                {
-                    "name": "Márk Sági-Kazár",
-                    "email": "mark.sagikazar@gmail.com"
-                }
-            ],
-            "description": "Promise used for asynchronous HTTP requests",
-            "homepage": "http://httplug.io",
-            "keywords": [
-                "promise"
-            ],
-            "support": {
-                "issues": "https://github.com/php-http/promise/issues",
-                "source": "https://github.com/php-http/promise/tree/1.1.0"
-            },
-            "install-path": "../php-http/promise"
         },
         {
             "name": "phpoption/phpoption",
@@ -1530,76 +1242,6 @@
             "install-path": "../symfony/deprecation-contracts"
         },
         {
-            "name": "symfony/options-resolver",
-            "version": "v6.1.0",
-            "version_normalized": "6.1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "a3016f5442e28386ded73c43a32a5b68586dd1c4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/a3016f5442e28386ded73c43a32a5b68586dd1c4",
-                "reference": "a3016f5442e28386ded73c43a32a5b68586dd1c4",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.1",
-                "symfony/deprecation-contracts": "^2.1|^3"
-            },
-            "time": "2022-02-25T11:15:52+00:00",
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\OptionsResolver\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Provides an improved replacement for the array_replace PHP function",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "config",
-                "configuration",
-                "options"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/options-resolver/tree/v6.1.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "install-path": "../symfony/options-resolver"
-        },
-        {
             "name": "symfony/polyfill-ctype",
             "version": "v1.26.0",
             "version_normalized": "1.26.0.0",
@@ -1769,6 +1411,85 @@
                 }
             ],
             "install-path": "../symfony/polyfill-mbstring"
+        },
+        {
+            "name": "symfony/polyfill-php72",
+            "version": "v1.26.0",
+            "version_normalized": "1.26.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php72.git",
+                "reference": "bf44a9fd41feaac72b074de600314a93e2ae78e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/bf44a9fd41feaac72b074de600314a93e2ae78e2",
+                "reference": "bf44a9fd41feaac72b074de600314a93e2ae78e2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "time": "2022-05-24T11:49:31+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.26-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php72\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 7.2+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php72/tree/v1.26.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "install-path": "../symfony/polyfill-php72"
         },
         {
             "name": "symfony/polyfill-php80",

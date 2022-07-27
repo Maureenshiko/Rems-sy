@@ -8,21 +8,22 @@ class ComposerStaticInitd1d76cef2d6ae00a5fea40222a0369f8
 {
     public static $files = array (
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
-        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
+            'Symfony\\Polyfill\\Php72\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
-            'Symfony\\Component\\OptionsResolver\\' => 34,
         ),
         'P' => 
         array (
@@ -38,13 +39,10 @@ class ComposerStaticInitd1d76cef2d6ae00a5fea40222a0369f8
         ),
         'H' => 
         array (
-            'Http\\Promise\\' => 13,
             'Http\\Message\\MultipartStream\\' => 29,
             'Http\\Message\\' => 13,
             'Http\\Factory\\Guzzle\\' => 20,
             'Http\\Discovery\\' => 15,
-            'Http\\Client\\' => 12,
-            'Hp\\RemsSy\\' => 10,
         ),
         'G' => 
         array (
@@ -57,20 +55,16 @@ class ComposerStaticInitd1d76cef2d6ae00a5fea40222a0369f8
         array (
             'Dotenv\\' => 7,
         ),
-        'B' => 
-        array (
-            'Buzz\\' => 5,
-        ),
-        'A' => 
-        array (
-            'Auth0\\SDK\\' => 10,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Symfony\\Polyfill\\Php80\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
+        ),
+        'Symfony\\Polyfill\\Php72\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php72',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
@@ -79,10 +73,6 @@ class ComposerStaticInitd1d76cef2d6ae00a5fea40222a0369f8
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
-        ),
-        'Symfony\\Component\\OptionsResolver\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/options-resolver',
         ),
         'Psr\\Http\\Message\\' => 
         array (
@@ -109,10 +99,6 @@ class ComposerStaticInitd1d76cef2d6ae00a5fea40222a0369f8
         array (
             0 => __DIR__ . '/..' . '/nyholm/psr7/src',
         ),
-        'Http\\Promise\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/php-http/promise/src',
-        ),
         'Http\\Message\\MultipartStream\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-http/multipart-stream-builder/src',
@@ -128,14 +114,6 @@ class ComposerStaticInitd1d76cef2d6ae00a5fea40222a0369f8
         'Http\\Discovery\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-http/discovery/src',
-        ),
-        'Http\\Client\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/php-http/httplug/src',
-        ),
-        'Hp\\RemsSy\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
@@ -156,14 +134,6 @@ class ComposerStaticInitd1d76cef2d6ae00a5fea40222a0369f8
         'Dotenv\\' => 
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
-        ),
-        'Buzz\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kriswallsmith/buzz/lib',
-        ),
-        'Auth0\\SDK\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/auth0/auth0-php/src',
         ),
     );
 
