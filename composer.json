@@ -2,6 +2,9 @@
     "require": {
         "private-packagist/api-client": "^1.28",
         "php-http/guzzle6-adapter": "^2.0",
-        "vlucas/phpdotenv": "^5.4"
+        "vlucas/phpdotenv": "^5.4",
+        "http-interop/http-factory-guzzle": "^1.2",
+        "steampixel/simple-php-router": "^0.7.0",
+        "auth0/auth0-php": "^8.2"
     }
 }
