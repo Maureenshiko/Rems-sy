@@ -1,20 +1,7 @@
 {
     "require": {
-        "symfony/polyfill-php72": "^1.26",
-        "graham-campbell/result-type": "^1.0",
-        "guzzlehttp/guzzle": "^7.4",
-        "http-interop/http-factory-guzzle": "^1.2",
-        "nyholm/psr7": "^1.5",
-        "php-http/discovery": "^1.14",
-        "php-http/message-factory": "^1.0",
-        "php-http/multipart-stream-builder": "^1.2",
-        "phpoption/phpoption": "^1.8",
-        "psr/cache": "^3.0",
-        "psr/event-dispatcher": "^1.0",
-        "ralouphie/getallheaders": "^3.0",
-        "steampixel/simple-php-router": "^0.7.0",
-        "symfony/polyfill-php80": "^1.26",
-        "vlucas/phpdotenv": "^5.4",
-        "auth0/auth0-php": "^8.2"
+        "private-packagist/api-client": "^1.28",
+        "php-http/guzzle6-adapter": "^2.0",
+        "vlucas/phpdotenv": "^5.4"
     }
 }
