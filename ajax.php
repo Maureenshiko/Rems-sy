@@ -48,14 +48,14 @@ if($action == "save_settings"){
 	if($save)
 		echo $save;
 }
-if($action == "save_category"){
-	$save = $crud->save_category();
+if($action == "save_apartments"){
+	$save = $crud->save_apartments();
 	if($save)
 		echo $save;
 }
 
-if($action == "delete_category"){
-	$delete = $crud->delete_category();
+if($action == "delete_apartments"){
+	$delete = $crud->delete_apartments();
 	if($delete)
 		echo $delete;
 }

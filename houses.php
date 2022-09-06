@@ -19,8 +19,8 @@
 								<input type="text" class="form-control" name="house_no" required="">
 							</div>
 							<div class="form-group">
-								<label class="control-label">Category</label>
-								<select name="category_id" id="" class="custom-select" required>
+								<label class="control-label">apartments</label>
+								<select name="apartments_id" id="" class="custom-select" required>
 									<?php 
 									$categories = $conn->query("SELECT * FROM categories order by name asc");
 									if($categories->num_rows > 0):
@@ -29,7 +29,7 @@
 									<option value="<?php echo $row['id'] ?>"><?php echo $row['name'] ?></option>
 								<?php endwhile; ?>
 								<?php else: ?>
-									<option selected="" value="" disabled="">Please check the category list.</option>
+									<option selected="" value="" disabled="">Please check the apartments list.</option>
 								<?php endif; ?>
 								</select>
 							</div>

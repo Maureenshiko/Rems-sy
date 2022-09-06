@@ -223,20 +223,20 @@ Class Action {
 	}
 
 	
-	function save_category(){
+	function save_aparment(){
 		extract($_POST);
 		$data = " name = '$name' ";
 			if(empty($id)){
-				$save = $this->db->query("INSERT INTO categories set $data");
+				$save = $this->db->query("INSERT INTO apartments set $data");
 			}else{
-				$save = $this->db->query("UPDATE categories set $data where id = $id");
+				$save = $this->db->query("UPDATE apartments set $data where id = $id");
 			}
 		if($save)
 			return 1;
 	}
-	function delete_category(){
+	function delete_apartments(){
 		extract($_POST);
-		$delete = $this->db->query("DELETE FROM categories where id = ".$id);
+		$delete = $this->db->query("DELETE FROM apartments where id = ".$id);
 		if($delete){
 			return 1;
 		}
@@ -245,7 +245,7 @@ Class Action {
 		extract($_POST);
 		$data = " house_no = '$house_no' ";
 		$data .= ", description = '$description' ";
-		$data .= ", category_id = '$category_id' ";
+		$data .= ", apartments_id = '$apartments_id' ";
 		$data .= ", price = '$price' ";
 		$chk = $this->db->query("SELECT * FROM houses where house_no = '$house_no' ")->num_rows;
 		if($chk > 0 ){
