@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 08, 2021 at 05:06 PM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.2.34
+-- Generation Time: Sep 06, 2022 at 10:52 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `rental_db`
+-- Database: `rems-sy`
 --
 
 -- --------------------------------------------------------
@@ -38,7 +38,13 @@ CREATE TABLE `categories` (
 
 INSERT INTO `categories` (`id`, `name`) VALUES
 (0, 'Detrix suites'),
-(2, 'Penthouse');
+(2, 'Penthouse'),
+(9, 'kilimanjaro'),
+(10, 'Black pearl'),
+(11, 'moonshine park'),
+(12, 'apartments'),
+(13, 'galana suites'),
+(14, 'Valley Court apartments');
 
 -- --------------------------------------------------------
 
@@ -53,6 +59,19 @@ CREATE TABLE `houses` (
   `description` text NOT NULL,
   `price` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `houses`
+--
+
+INSERT INTO `houses` (`id`, `house_no`, `category_id`, `description`, `price`) VALUES
+(5, '2', 10, 'house apartment in kilimani', 22000),
+(6, '4', 9, '2 Bedroom ,located in kilimanjaro apartment ,kilimani ', 28000),
+(7, '1', 10, '1 bedroom located in kileleshwa ,black pearl apartments', 30500),
+(8, '3', 0, '1 bedroom apartment ,located in Detrix plaza apartment ', 27500),
+(9, '5', 11, '3 bedroom apartment ,located in moonshine park apartment kileleshwa', 55000),
+(10, '6', 11, '2 bedroom apartment ,located in moonshine park suites apartment ', 37000),
+(11, '7', 0, '1 bedroom apartment ,located in Detrix plaza apartment ', 22000);
 
 -- --------------------------------------------------------
 
@@ -107,6 +126,15 @@ CREATE TABLE `tenants` (
   `status` tinyint(1) NOT NULL DEFAULT 1 COMMENT '1 = active, 0= inactive',
   `date_in` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tenants`
+--
+
+INSERT INTO `tenants` (`id`, `firstname`, `middlename`, `lastname`, `email`, `contact`, `house_id`, `status`, `date_in`) VALUES
+(9, 'Musa', 'Ali', 'Ahmed', 'Ahmedali156@gmail.com', '0765434780', 0, 1, '2022-05-17'),
+(10, 'Musa', 'Ali', 'Ahmed', 'Ahmedali156@gmail.com', '0765434780', 0, 1, '2022-06-06'),
+(11, 'ahmed', 'abdulahi', 'safir', 'safiramed@gmail.com', '0722543879', 5, 1, '2022-01-11');
 
 -- --------------------------------------------------------
 
@@ -177,13 +205,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `houses`
 --
 ALTER TABLE `houses`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `payments`
@@ -201,7 +229,7 @@ ALTER TABLE `system_settings`
 -- AUTO_INCREMENT for table `tenants`
 --
 ALTER TABLE `tenants`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `users`
