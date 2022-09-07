@@ -15,7 +15,6 @@ $auth0 = new \Auth0\SDK\Auth0([
     'clientSecret' => $_ENV['AUTH0_CLIENT_SECRET'],
     'cookieSecret' => $_ENV['AUTH0_COOKIE_SECRET']
 ]);
-
 // 👆 We're continuing from the steps above. Append this to your index.php file.
 
 // Import our router library:
@@ -26,7 +25,6 @@ define('ROUTE_URL_INDEX', rtrim($_ENV['AUTH0_BASE_URL'], '/'));
 define('ROUTE_URL_LOGIN', ROUTE_URL_INDEX . '/login');
 define('ROUTE_URL_CALLBACK', ROUTE_URL_INDEX . '/callback');
 define('ROUTE_URL_LOGOUT', ROUTE_URL_INDEX . '/logout');
-
 // 👆 We're continuing from the steps above. Append this to your index.php file.
 
 Route::add('/', function() use ($auth0) {
@@ -45,10 +43,8 @@ Route::add('/', function() use ($auth0) {
 
   echo '<p>You can now <a href="/logout">log out</a>.</p>';
 });
-
 // ✋ We don't need to include this in our sample application, it's just an example.
 $name = $session->user['name'] ?? $session->user['nickname'] ?? $session->user['email'] ?? 'Unknown';
-
 // 👆 We're continuing from the steps above. Append this to your index.php file.
 
 Route::add('/login', function() use ($auth0) {
@@ -59,6 +55,7 @@ Route::add('/login', function() use ($auth0) {
   header("Location: " . $auth0->login(ROUTE_URL_CALLBACK));
   exit;
 });
+
 // 👆 We're continuing from the steps above. Append this to your index.php file.
 
 Route::add('/callback', function() use ($auth0) {
