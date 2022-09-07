@@ -5,6 +5,7 @@
         "vlucas/phpdotenv": "^5.4",
         "http-interop/http-factory-guzzle": "^1.2",
         "steampixel/simple-php-router": "^0.7.0",
-        "auth0/auth0-php": "^8.2"
+        "auth0/auth0-php": "^8.2",
+        "clue/stream-filter": "^1.6"
     }
 }
