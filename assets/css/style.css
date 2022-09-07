@@ -738,7 +738,7 @@ section {
 .about .icon-boxes h3 {
   font-size: 28px;
   font-weight: 700;
-  color: #2c4964;
+  color: #020d17;
   margin-bottom: 15px;
 }
 
@@ -753,23 +753,23 @@ section {
   justify-content: center;
   width: 64px;
   height: 64px;
-  border: 2px solid #8dc2f1;
+  border: 2px solid #f18dab;
   border-radius: 50px;
   transition: 0.5s;
 }
 
 .about .icon-box .icon i {
-  color: #1977cc;
+  color: #041525;
   font-size: 32px;
 }
 
 .about .icon-box:hover .icon {
-  background: #1977cc;
-  border-color: #1977cc;
+  background: #010f1b;
+  border-color: #6e8f1d;
 }
 
 .about .icon-box:hover .icon i {
-  color: #fff;
+  color: rgb(9, 0, 0);
 }
 
 .about .icon-box .title {
@@ -780,12 +780,12 @@ section {
 }
 
 .about .icon-box .title a {
-  color: #343a40;
+  color: #34403a;
   transition: 0.3s;
 }
 
 .about .icon-box .title a:hover {
-  color: #1977cc;
+  color: #cc1919;
 }
 
 .about .icon-box .description {
@@ -803,7 +803,7 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#1977cc 50%, rgba(25, 119, 204, 0.4) 52%);
+  background: radial-gradient(#910e97 50%, rgba(207, 4, 122, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -822,7 +822,7 @@ section {
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
+  border-left: 15px solid rgb(255, 255, 255);
   z-index: 100;
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
@@ -942,7 +942,7 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  border: 1px solid #d5e1ed;
+  border: 1px solid #9ccb0f;
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
 }
@@ -951,7 +951,7 @@ section {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #1977cc;
+  background: #23c40a;
   border-radius: 5px;
   transition: all .3s ease-out 0s;
   display: flex;
@@ -962,7 +962,7 @@ section {
 }
 
 .services .icon-box .icon i {
-  color: #fff;
+  color: rgb(24, 154, 21);
   font-size: 28px;
 }
 
@@ -973,7 +973,7 @@ section {
   top: -8px;
   height: 100%;
   width: 100%;
-  background: #badaf7;
+  background: #04a326;
   border-radius: 5px;
   transition: all .3s ease-out 0s;
   transform: translateZ(-1px);
@@ -986,7 +986,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #2c4964;
+  color: #4d5824;
 }
 
 .services .icon-box p {
@@ -996,24 +996,24 @@ section {
 }
 
 .services .icon-box:hover {
-  background: #1977cc;
-  border-color: #1977cc;
+  background: #1b106d;
+  border-color: #189f3a;
 }
 
 .services .icon-box:hover .icon {
-  background: #fff;
+  background: rgb(106, 11, 11);
 }
 
 .services .icon-box:hover .icon i {
-  color: #1977cc;
+  color: #5e1210;
 }
 
 .services .icon-box:hover .icon::before {
-  background: #3291e6;
+  background: #9c4d08;
 }
 
 .services .icon-box:hover h4 a, .services .icon-box:hover p {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 /*--------------------------------------------------------------
@@ -1153,7 +1153,7 @@ section {
 }
 
 .departments .details p {
-  color: #777777;
+  color: #169c64;
 }
 
 .departments .details p:last-child {
@@ -1167,7 +1167,7 @@ section {
   }
   .departments .nav-link.active {
     color: #fff;
-    background: #1977cc;
+    background: #18b40f;
   }
 }
 
